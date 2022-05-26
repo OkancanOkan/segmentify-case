@@ -1,0 +1,136 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tabs-products {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .tabs-products {
+    flex-direction: column;
+  }
+}
+
+.tabs {
+  display: block;
+}
+
+.tab-div {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  min-width: 300px;
+}
+@media screen and (max-width: 992px) {
+  .tab-div {
+    flex-direction: row;
+  }
+
+  .items-li:active {
+    border-left: 0 !important;
+    border-bottom: 2px solid blue;
+    background-color: rgb(236, 236, 240) !important;
+  }
+  .imgShip {
+    display: none;
+  }
+}
+
+.items-li {
+  margin: 5px 0 5px 0;
+  padding: 15px;
+  cursor: pointer;
+  min-width: 300px;
+  color: grey;
+}
+
+.items-li:active {
+  border-left: 1px solid blue;
+  background-color: rgb(197, 227, 255);
+  border-radius: 4px;
+  color: blue;
+}
+
+.title-span {
+  font-size: 45px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-items {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.img {
+  margin: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.product-content {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.price {
+  margin: 15px;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  background-color: whitesmoke;
+  font-size: 25px;
+  font-style: normal;
+}
+.shipping-in {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+h1 {
+  margin-left: 15px;
+}
+.shippingFee {
+  margin-left: 15px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0 139 243);
+  color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 15px;
+  width: 375px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 992px) {
+  .button {
+    display: none;
+  }
+}
